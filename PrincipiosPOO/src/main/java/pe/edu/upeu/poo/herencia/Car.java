@@ -15,6 +15,7 @@ public class Car extends Vehicle{
         System.out.println("Este carro es de marca "+marca
         +" y el modelo es:"+modelo);
         sonido();
+        System.out.println("Probando");
     }
     
     public static void main(String[] args) {
