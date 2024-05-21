@@ -54,7 +54,7 @@ public class Producto {
     @ManyToOne(optional = false)
     @JsonIgnoreProperties({"productos"})
     private UnidMedida idUnidad;
-    /*
+    
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "id_producto", referencedColumnName = "id_producto")
     @JsonIgnoreProperties({"idProducto"})
@@ -63,5 +63,5 @@ public class Producto {
     @JoinColumn(name = "id_producto", referencedColumnName = "id_producto")
     @JsonIgnoreProperties({"idProducto"})
     public List<VentaDetalle> ventaDetalles;
-    */
+    
 }
