@@ -29,13 +29,13 @@ import pe.edu.upeu.syscenterlife.componentes.MyTextField;
 import pe.edu.upeu.syscenterlife.componentes.PanelBorder;
 import pe.edu.upeu.syscenterlife.modelo.SessionManager;
 import pe.edu.upeu.syscenterlife.modelo.Usuario;
-<<<<<<< HEAD
+
 import pe.edu.upeu.syscenterlife.servicio.PerfilService;
-=======
->>>>>>> b475189e20b77475d4f400dbc44871fcf0e23638
+
 import pe.edu.upeu.syscenterlife.servicio.UsuarioService;
 import pe.edu.upeu.syscenterlife.util.MsgBox;
 import pe.edu.upeu.syscenterlife.util.UtilsX;
+
 
 /**
  *
@@ -50,11 +50,10 @@ public class Login extends javax.swing.JFrame {
     MyPasswordField txtPassword;
     MyTextField txtUsername = new MyTextField();
     Button loginButton;
-<<<<<<< HEAD
+
     Button registerButton;
     Button guardarButton;
-=======
->>>>>>> b475189e20b77475d4f400dbc44871fcf0e23638
+
     UtilsX obj = new UtilsX();
     ConfigurableApplicationContext ctx;
     @Autowired
@@ -62,11 +61,10 @@ public class Login extends javax.swing.JFrame {
     
     @Autowired
     UsuarioService usuarioService;
-<<<<<<< HEAD
+
     @Autowired
     PerfilService perfilService;
-=======
->>>>>>> b475189e20b77475d4f400dbc44871fcf0e23638
+
 
     public Login() {
         initComponents();
@@ -86,19 +84,17 @@ public class Login extends javax.swing.JFrame {
         }
         txtPassword = new MyPasswordField();
         loginButton = new Button();
-<<<<<<< HEAD
+
         guardarButton=new Button();
         registerButton = new Button();
-=======
->>>>>>> b475189e20b77475d4f400dbc44871fcf0e23638
+
         loginButton.setFont(new Font("sansserif", 1, 20));
         loginButton.setForeground(new Color(7, 164, 121));
         loginButton.setEffectColor(Color.yellow);
         loginButton.setText("Ingresar");
-<<<<<<< HEAD
+
         registerButton.setText("Registrar");
-=======
->>>>>>> b475189e20b77475d4f400dbc44871fcf0e23638
+
         initCustom();
         this.setContentPane(panelGeneral);
         this.setResizable(false);
@@ -106,10 +102,7 @@ public class Login extends javax.swing.JFrame {
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         this.setSize(new Dimension(screenSize.width / 2, (screenSize.height - 36) / 2));
         this.setLocationRelativeTo(null);
-<<<<<<< HEAD
-        
-=======
->>>>>>> b475189e20b77475d4f400dbc44871fcf0e23638
+
     }
 
     public void addEventListeners() {
@@ -168,7 +161,7 @@ public class Login extends javax.swing.JFrame {
                 }
             }
         });
-<<<<<<< HEAD
+
         
         registerButton.addActionListener(new ActionListener() {
             @Override
@@ -251,8 +244,7 @@ public class Login extends javax.swing.JFrame {
                 
             }
         });
-=======
->>>>>>> b475189e20b77475d4f400dbc44871fcf0e23638
+
     }
 
     public void initCustom() {
@@ -268,10 +260,7 @@ public class Login extends javax.swing.JFrame {
         txtPassword.setText("Coloca tu clave");
         txtPassword.setForeground(Color.gray);
         txtPassword.setEchoChar((char) 0);
-<<<<<<< HEAD
-        
-=======
->>>>>>> b475189e20b77475d4f400dbc44871fcf0e23638
+
         panelBorder.setLayout(new MigLayout("wrap", "push[center]push", "push[]25[]10[]10[]25[]push"));
         JLabel label = new JLabel("SysCenterlife");
         label.setFont(new Font("sansserif", 1, 30));
@@ -280,16 +269,15 @@ public class Login extends javax.swing.JFrame {
         panelBorder.add(txtUsername, "w 80%");
         panelBorder.add(txtPassword, "w 80%");
         panelBorder.add(loginButton, "w 60%");
-<<<<<<< HEAD
+
         panelBorder.add(registerButton, "w 60%");
-=======
->>>>>>> b475189e20b77475d4f400dbc44871fcf0e23638
+
         fondoPanel.setPreferredSize(new Dimension(250, 360));
         panelGeneral.add(fondoPanel);
         panelGeneral.add(panelBorder);
         addEventListeners();
     }
-<<<<<<< HEAD
+
     public void initCustom2() {
         panelBorder.setPreferredSize(new Dimension(250, 360));
         txtUsername.setPrefixIcon(new ImageIcon(obj.getFile("img/user.png")));
@@ -315,8 +303,7 @@ public class Login extends javax.swing.JFrame {
         panelGeneral.add(panelBorder);
         addEventListeners2();
     }
-=======
->>>>>>> b475189e20b77475d4f400dbc44871fcf0e23638
+
 
     public void setContexto(ConfigurableApplicationContext ctx) {
         this.ctx = ctx;
