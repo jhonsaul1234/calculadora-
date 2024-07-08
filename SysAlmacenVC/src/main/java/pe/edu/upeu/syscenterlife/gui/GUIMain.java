@@ -181,6 +181,16 @@ public class GUIMain extends JFrame {
              
               
             }
+            if (((JMenuItem) e.getSource()).getName().equals("mimarca")) {
+                System.out.println("Holas si llega Marca");
+             
+              
+            }
+            if (((JMenuItem) e.getSource()).getName().equals("miproducto")) {
+                System.out.println("Holas si llega Marca");
+             
+              
+            }
             if (((JMenuItem) e.getSource()).getName().equals("mimiselectall")) {
                 jtpane.removeAll();//remueve todo el contenido
             }
