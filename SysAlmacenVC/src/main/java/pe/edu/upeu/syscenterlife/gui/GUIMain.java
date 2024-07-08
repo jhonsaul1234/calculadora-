@@ -176,6 +176,11 @@ public class GUIMain extends JFrame {
                 contai.validate();
                 contai.repaint();
             }
+            if (((JMenuItem) e.getSource()).getName().equals("micategoria")) {
+                System.out.println("Holas si llega Categoria");
+             
+              
+            }
             if (((JMenuItem) e.getSource()).getName().equals("mimiselectall")) {
                 jtpane.removeAll();//remueve todo el contenido
             }
