@@ -35,7 +35,8 @@ public class CalcFxApplication extends Application {
 				builder.run(getParameters().getRaw().toArray(new String[0]));
 
 
-		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/calc.fxml"));
+		//FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/calc.fxml"));
+		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/tictactoe.fxml"));
 		fxmlLoader.setControllerFactory(configurableApplicationContext::getBean);
 		parent= fxmlLoader.load();
 	}
@@ -54,7 +55,7 @@ public class CalcFxApplication extends Application {
 		stage.setMinHeight(preferredHeight);
 
 
-		Application.setUserAgentStylesheet(new PrimerLight().getUserAgentStylesheet());
+		//Application.setUserAgentStylesheet(new PrimerLight().getUserAgentStylesheet());
 		//scene.getStylesheets().add(getClass().getResource("/css/bootstrap3.css").toExternalForm());
 		scene.getStylesheets().add(BootstrapFX.bootstrapFXStylesheet());
 		stage.setScene(scene);
